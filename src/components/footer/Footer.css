@@ -5,7 +5,7 @@
   text-align: center;
   margin-top: auto;
   width: 100%;
-  overflow-y:hidden;
+  overflow-y: hidden;
 }
 
 .footer-container {
@@ -55,6 +55,7 @@
   display: flex;
   justify-content: flex-end;
   gap: 2rem;
+  flex-wrap: wrap; /* Ensures proper wrapping */
 }
 
 .socials,
@@ -80,6 +81,8 @@
   text-decoration: none;
   font-size: 0.9rem;
   line-height: 1.4;
+  display: flex;
+  align-items: center;
 }
 
 .socials a:hover,
@@ -97,69 +100,79 @@
   margin-top: 1rem;
 }
 
-/* Medium devices (tablets, 768px and down) */
+/* Responsive Design */
+
+/* Tablets (max-width: 768px) */
 @media (max-width: 768px) {
   .footer {
-      padding: 1.5rem;
+    padding: 1.5rem;
   }
   
   .footer-container {
-      flex-direction: column;
-      align-items: center;
-      gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-  
+
   .footer-left,
   .footer-center,
   .footer-right {
-      text-align: center;
-      width: 100%;
+    width: 100%;
+    text-align: center;
   }
-  
+
   .footer-right {
-      flex-direction: column;
-      align-items: center;
-      gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
   }
-  
+
   .socials,
   .blogs {
-      align-items: center;
-      text-align: center;
+    align-items: center;
+    text-align: center;
   }
-  
+
   .footer-center a::before {
-      display: none;
+    display: none;
   }
 }
 
-/* Small devices (phones, 480px and down) */
+/* Phones (max-width: 480px) */
 @media (max-width: 480px) {
   .footer {
-      padding: 1rem;
+    padding: 1rem;
   }
-  
+
   .footer-left h3 {
-      font-size: 1.3rem;
+    font-size: 1.3rem;
   }
-  
+
   .footer-center a {
-      font-size: 0.95rem;
+    font-size: 0.95rem;
   }
-  
+
   .socials h4,
   .blogs h4 {
-      font-size: 0.95rem;
+    font-size: 0.95rem;
   }
-  
+
   .socials a,
   .blogs a {
-      font-size: 0.85rem;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
   }
-  
+
   .copyright {
-      font-size: 0.8rem;
+    font-size: 0.8rem;
   }
 }
 
-
+/* Social Icons */
+.social-icon {
+  width: 18px; /* Slightly reduced for better scaling */
+  height: 18px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
