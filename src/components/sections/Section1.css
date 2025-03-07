@@ -16,6 +16,7 @@
 .right-of-hero {
   flex: 1;
  /*  overflow-y:hidden;*/
+  
 }
 
 .hero-title {
@@ -61,7 +62,7 @@
 .hero-img {
   width: 100%;
   height: auto;
-  margin-top: -80px;/*  overflow-y:hidden;*/
+  margin-top: -20px;/*  overflow-y:hidden;*/
 }
 
 /* Media query for screens 768px and below */
