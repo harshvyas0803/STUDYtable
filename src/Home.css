@@ -4,14 +4,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif; /* Changed to "Inter" for consistency */
+  font-family: "Inter", sans-serif;
 }
 
+/* Base Styles */
 .title {
   text-align: center;
   font-size: 2.2rem;
   margin-top: 2rem;
- 
 }
 
 .study {
@@ -31,7 +31,7 @@
 
 .hero-container {
   display: flex;
-  margin-top: 3rem;
+  margin-top: 9rem;
 }
 
 .left-of-hero {
@@ -40,13 +40,12 @@
 
 .right-of-hero {
   flex: 1;
-  
 }
 
 .hero-title {
   color: gray;
   font-size: 3rem;
-
+  letter-spacing: 1px;
 }
 
 .hero-title .optimize,
@@ -54,6 +53,7 @@
 .hero-title .neet,
 .hero-title .boards {
   color: black;
+  letter-spacing: 1px;
 }
 
 .hero-buttons {
@@ -70,52 +70,154 @@
 
 .hero-img {
   width: 100%;
-  height: auto ;
- 
+  height: auto;
   margin-top: -80px;
 }
 
- 
 .practice-section {
+  display: flex;
+  margin-top: 15rem;
+}
+
+.left-of-section {
+  flex: 1;
+}
+
+.section-title {
+  font-size: 2.563rem; letter-spacing: 1px;
+}
+
+.section-description {
+  color: gray;
+  width: 29vw;
+  margin-top: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.right-of-section {
+  flex: 1;
+}
+
+.section-img {
+  width: 100%;
+  height: auto;
+}
+
+.section3 {
+  display: flex;
+  margin-top: 15rem;
+}
+
+.left-of-section3 {
+  flex: 1;
+}
+
+.right-of-section3 {
+  flex: 1;
+}
+
+.section3-img {
+  width: 90%;
+  height: auto;
+  margin-top: -5rem;
+}
+
+.section3-title {
+  font-size: 2.125rem;
+  letter-spacing: 1px;
+}
+
+.section3-description {
+  margin-top: 1rem;
+  color: gray;
+  line-height: 1.875rem;
+  width: 29rem;
+  font-weight: 400;
+  font-size: 1.375rem;
+}
+
+
+
+.section4{
     display: flex;
     margin-top: 15rem;
 }
 
-.left-of-section {
-    flex: 1;
-}
-
-.section-title {
-    font-size: 2.563rem;
-}
-
-.section-description {
-    color: gray;
-    width: 29vw;  
-    margin-top: 1rem;
-    line-height: 1.5; 
-    font-weight: 400;
-    font-size: 1.3rem;
-}
-
-.right-of-section {
+.left-of-section4{
     flex: 1;
    
 }
 
-.section-img {
-    width: 100%; 
-    height: auto; 
-    margin-top: -5rem;
+.section4-title{
+    font-size: 2.125rem;
+    letter-spacing: 1px;
+
+}
+
+.section4-description{
+width: 32rem;
+margin-top: 1rem;
+color: gray;
+font-size: 1.375rem;
+line-height: 2rem;
 }
 
 
+
+
+.right-of-section4{
+    flex: 1;
+
+}
+
+
+.section5{
+   
+    background: rgb(45, 44, 44);  
+    color: #ffffff; 
+    padding: 20px;  
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+    width: 60vw;  
+    height: 40vh;
+    margin: 20px auto;  
+    text-align: left; 
+    margin-top: 12rem;
+  }
+  
+  .section5-heading {
+    font-size: 24px;  
+    font-weight: bold;
+    margin-bottom: 10px;  
+  }
+  
+  .section5-description {
+    font-size: 16px; 
+    line-height: 1.5;  
+    margin-bottom: 15px;  
+    width: 70%;
+    line-height: 34px;
+  }
+  
+  .section5-link {
+    color: #ffffff; 
+    text-decoration: none; 
+    font-size: 14px; 
+  }
+  
+  .black-box__link:hover {
+    text-decoration: underline;  
+  }
+  
+   
 
 /* Responsive Styles */
 @media (max-width: 768px) {
   .hero-container {
     flex-direction: column;
-    margin-top: -30px;
+    margin-top: 30px;
   }
 
   .left-of-hero,
@@ -136,26 +238,193 @@
   .hero-buttons {
     justify-content: center;
   }
-  .right-of-hero{
+
+  .right-of-hero {
     margin-top: 5rem;
   }
 
+  .hero-img {
+    margin-top: 0;
+  }
+
   .practice-section {
-    flex-direction: column;  
-    margin-top: 2rem;  
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .left-of-section {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-description {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .section3 {
+    flex-direction: column-reverse; /* Reverse order so text is on top */
+    margin-top: 5rem;
+  }
+
+  .left-of-section3 {
+    margin-top: 2rem; /* Space between text and image */
+  }
+
+  .section3-img {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .right-of-section3 {
+    text-align: center;
+  }
+
+  .section3-title {
+    font-size: 1.5rem;
+  }
+
+  .section3-description {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+.section4{
+    flex-direction: column-reverse;  
+    margin-top: 5rem;
 }
 
-.left-of-section {
-    margin-bottom: 2rem;  
+
+.left-of-section4 {
+    margin-top: 2rem; /* Space between text and image */
+  }
+
+  .section4-img {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .right-of-section4 {
+    text-align: center;
+  }
+
+  .section4-title {
+    font-size: 1.5rem;
+  }
+
+  .section4-description {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+
+
+
+
+  .section5 {
+    width: 90%; 
+    padding: 15px; 
+  }
+
+  .section5-heading {
+    font-size: 20px;  
+  }
+
+  .section5-description {
+    font-size: 14px;  
+  }
+
+  .section5-link {
+    font-size: 12px;  
+  }
+
+
 }
 
-.section-title {
-    font-size: 1.5rem; 
-}
 
-.section-description {
-    width: 100%;  
-    font-size: 1rem;  
-}
 
-}
+
+
+
+
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    margin-top: auto; /* Ensures footer stays at the bottom */
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .socials,
+  .blogs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9em;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .copyright {
+    margin: 10px 0 0;
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .socials,
+    .blogs {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .footer a {
+      font-size: 0.8em;
+    }
+  
+    .copyright {
+      font-size: 0.8em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer {
+      padding: 15px;
+    }
+  
+    .footer a {
+      font-size: 0.75em;
+    }
+  
+    .copyright {
+      font-size: 0.75em;
+    }
+  }
