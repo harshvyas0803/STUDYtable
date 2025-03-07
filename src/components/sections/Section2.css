@@ -1,10 +1,16 @@
 .practice-section {
   display: flex;
   margin-top: 15rem;
+
+  overflow: hidden;
 }
+
 
 .left-of-section {
   flex: 1;
+  max-width: 100%;
+  overflow: hidden;
+
 }
 
 .section-title {

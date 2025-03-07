@@ -3,7 +3,7 @@
   text-align: center;
   font-size: 2.2rem;
   margin-top: 2rem;
-  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 /* Media Query for 900px */
