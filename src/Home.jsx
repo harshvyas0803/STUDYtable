@@ -6,8 +6,19 @@ import hero_img from "./assets/hero-img.svg";
 import v2 from "./assets/v2.svg";
 import v3 from "./assets/v3.svg";
 import v4 from "./assets/v4.svg";
+import { useGSAP } from "@gsap/react";
 
 const Home = () => {
+
+  useGSAP(()=>{
+
+
+
+
+  })
+
+
+  
   return (
     <>
       <h1 className="title">
