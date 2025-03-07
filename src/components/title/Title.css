@@ -1,16 +1,22 @@
-
 /* Base Styles */
 .title {
-    text-align: center;
-    font-size: 2.2rem;
-    margin-top: 2rem;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-top: 0rem;
+}
+
+/* Media Query for 900px */
+@media (max-width: 900px) {
+  .title {
+    margin-bottom: 5rem;  
+    margin-top: -4rem; /* Adjust this value as needed */
   }
-  
-  .study {
-    font-weight: 200;
-  }
-  
-  .table {
-    font-weight: 700;
-  }
-  
+}
+
+.study {
+  font-weight: 200;
+}
+
+.table {
+  font-weight: 700;
+}
