@@ -17,11 +17,11 @@ const Home = () => {
   
   return (
     <>
-   
+             
+      <Title></Title>
 
       <div className="parent-container">
 
-      <Title></Title>
       <Section1></Section1>
       <Section2></Section2>
       <Section3></Section3>
