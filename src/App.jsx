@@ -1,14 +1,14 @@
-import React from 'react'
-import Home from './Home'
+import React from "react";
+import ThemeProvider from "./context/ThemeContext";
+import Home from "./Home";
 
-const App = () => {
+function App() {
   return (
-    <div>
-
-<Home></Home>
-
-    </div>
-  )
+    <ThemeProvider>
+      <Home />
+    </ThemeProvider>
+  );
 }
 
-export default App
+export default App;
+

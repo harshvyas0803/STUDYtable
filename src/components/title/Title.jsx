@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./Title.css";
+import ThemeToggle from "../ThemeToggle";
 
 const Title = () => {
   return (
@@ -41,6 +42,8 @@ const Title = () => {
           table
         </motion.span>
       </motion.h1>
+
+      <ThemeToggle/>
     </div>
   );
 };

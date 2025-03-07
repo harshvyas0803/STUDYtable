@@ -1,3 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
- 
+ /* Light Theme */
+[data-theme="light"] {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #007bff;
+  }
+  
+  /* Dark Theme */
+  [data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --primary-color: #1e90ff;
+  }
+  
+  /* Apply Theme */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  

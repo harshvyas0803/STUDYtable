@@ -1,16 +1,21 @@
 .hero-container {
   display: flex;
-  margin-top: 9rem;  overflow-y:hidden;
+ 
+  margin-top: 4rem;   
+  
 }
+
+  
 
 .left-of-hero {
   flex: 1;
-  overflow-y:hidden;
+   
+ /*  overflow-y:hidden;*/
 }
 
 .right-of-hero {
   flex: 1;
-  overflow-y:hidden;
+ /*  overflow-y:hidden;*/
 }
 
 .hero-title {
@@ -18,36 +23,45 @@
   font-size: 3rem;
   letter-spacing: 1px;
   line-height: 1.2;
-  overflow-y:hidden;
+ /*  overflow-y:hidden;*/
+}
+ /* Default (Light Mode) */
+:root {
+  --text-color: #000000;
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+  --text-color: #ffffff;
 }
 
 .hero-title .optimize,
 .hero-title .jee,
 .hero-title .neet,
 .hero-title .boards {
-  color: black;
+  color: var(--text-color); /* Dynamically change color */
   letter-spacing: 1px;
-  overflow-y:hidden;
+  overflow-y: hidden;
 }
 
 .hero-buttons {
   margin-top: 2rem;
   display: flex;
   gap: 1rem;
-  flex-wrap: wrap; /* Allows buttons to wrap on narrow screens */ overflow-y:hidden;
+  flex-wrap: wrap; /* Allows buttons to wrap on narrow screens *//*  overflow-y:hidden;*/
 }
 
 .hero-description {
   margin-top: 1rem;
   color: gray;
   font-size: 1.2rem;
-  line-height: 1.5; overflow-y:hidden;
+  line-height: 1.5;/*  overflow-y:hidden;*/
 }
 
 .hero-img {
   width: 100%;
   height: auto;
-  margin-top: -80px; overflow-y:hidden;
+  margin-top: -80px;/*  overflow-y:hidden;*/
 }
 
 /* Media query for screens 768px and below */
