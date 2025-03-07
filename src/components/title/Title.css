@@ -12,8 +12,8 @@
 /* Media Query for 900px */
 @media (max-width: 900px) {
   .title {
-    margin-bottom: 5rem;
-    margin-top: -4rem; /* Removed extra space in "-4  rem" */
+    margin-bottom: 0rem;
+    margin-top: 3rem; /* Removed extra space in "-4  rem" */
   }
 }
 
