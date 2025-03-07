@@ -6,6 +6,7 @@ import hero_img from "./assets/hero-img.svg";
 import v2 from "./assets/v2.svg";
 import v3 from "./assets/v3.svg";
 import v4 from "./assets/v4.svg";
+
 const Home = () => {
   return (
     <>
@@ -14,12 +15,8 @@ const Home = () => {
         <span className="table">table</span>
       </h1>
 
-
-                                                      
-
-
       <div className="parent-container">
-                                                       {/* SECTION-1 */}
+        {/* SECTION-1 */}
         <section className="hero-container">
           <div className="left-of-hero">
             <div className="hero-content">
@@ -57,9 +54,7 @@ const Home = () => {
           </div>
         </section>
 
-
-                                                      {/* SECTION-2 */}
-
+        {/* SECTION-2 */}
         <section className="practice-section">
           <div className="left-of-section">
             <h2 className="section-title">Unlimited Practice session</h2>
@@ -76,8 +71,7 @@ const Home = () => {
           </div>
         </section>
 
-
-                                                       {/* SECTION-3 */}
+        {/* SECTION-3 */}
         <section className="section3">
           <div className="left-of-section3">
             <img src={v3} alt="illustration" className="section3-img" />
@@ -95,13 +89,8 @@ const Home = () => {
           </div>
         </section>
 
-
-
-                                                  {/* SECTION-4 */}
-
+        {/* SECTION-4 */}
         <div className="section4">
-         
-
           <div className="left-of-section4">
             <h2 className="section4-title">Managing students academic life</h2>
             <p className="section4-description">
@@ -118,51 +107,57 @@ const Home = () => {
           </div>
         </div>
 
-
-
-                                                {/* SECTION-5 */}
+        {/* SECTION-5 */}
         <div className="section5">
-
-
-        
-      <h2 className="section5-heading">How we come to this?</h2>
-      <p className="section5-description">
-        We observed and researched for three years in a variety of student. Where
-        The best needs more attention to do better and the student struggling
-        needs more attention to improve their own abilities. All students need
-        personal attention. Based on the notion of 'Personal attention' we have
-        built our algorithm and Ai tutor to cater each children uniquely..
-      </p>
-      <a href="#" className="section5-link">
-        Read the full story →
-      </a>
-    
-
-
-
-
+          <h2 className="section5-heading">How we come to this?</h2>
+          <p className="section5-description">
+            We observed and researched for three years in a variety of student. Where
+            The best needs more attention to do better and the student struggling
+            needs more attention to improve their own abilities. All students need
+            personal attention. Based on the notion of 'Personal attention' we have
+            built our algorithm and Ai tutor to cater each children uniquely..
+          </p>
+          <a href="#" className="section5-link">
+            Read the full story →
+          </a>
         </div>
 
+        {/* SECTION-6 */}
         <div className="section6">
-            <h4>Carfted for your all academic needs</h4>
-            <button className="apply-button">Get Your Entry</button>
+          <h4>Crafted for your all academic needs</h4>
+          <button className="apply-button">Get Your Entry</button>
         </div>
 
+        {/* FOOTER */}
         <footer className="footer">
-      <div className="footer-links">
-        <div className="socials">
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">What's App</a>
-        </div>
-        <div className="blogs">
-          <a href="/how-we-plan-learning-session">How we plan learning session?</a>
-          <a href="/how-we-plan-assessment-session">How we plan assessment session?</a>
-          <a href="/how-we-manage-student-life">How we manage student life?</a>
-          <a href="/the-effective-student">The effective student</a>
-        </div>
-      </div>
-      <p className="copyright">© Copyright 2025 Studytable</p>
-    </footer>
+          <div className="footer-container">
+            <div className="footer-left">
+              <h3>Studytable</h3>
+              <p className="copyright">© Copyright 2025 Studytable</p>
+            </div>
+            <div className="footer-center">
+              <a href="#">NOTICE BOARD</a>
+            </div>
+            <div className="footer-right">
+              <div className="socials">
+                <h4>SOCIALS</h4>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                  <i className="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
+                  <i className="fab fa-whatsapp"></i> What's App
+                </a>
+              </div>
+              <div className="blogs">
+                <h4>BLOGS</h4>
+                <a href="/how-we-plan-learning-session">How we plan learning session?</a>
+                <a href="/how-we-plan-assessment-session">How we plan assessment session?</a>
+                <a href="/how-we-manage-student-life">How we manage student life?</a>
+                <a href="/the-effective-student">The effective student</a>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
     </>
   );
