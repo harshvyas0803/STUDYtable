@@ -1,11 +1,31 @@
-/* SignInLink.css */
+/* SignIn Link - Responsive & Scalable */
 .sign-in-link {
-    font-size: 1rem;
-    color: #000;
-    text-decoration: none;
-    padding: 10px 20px;
+  font-size: 2rem;
+  color: #000;
+  text-decoration: none;
+  padding: 12px 24px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.sign-in-link:hover {
+  text-decoration: underline;
+  color: #333;
+}
+
+/* Medium devices (Tablets, 768px and down) */
+@media (max-width: 768px) {
+  .sign-in-link {
+      font-size: 1.75rem;
+      padding: 10px 20px;
   }
-  
-  .sign-in-link:hover {
-    text-decoration: underline;
+}
+
+/* Small devices (Phones, 480px and down) */
+@media (max-width: 480px) {
+  .sign-in-link {
+      font-size: 1.5rem;
+      padding: 8px 16px;
   }
+}

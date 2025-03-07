@@ -74,7 +74,7 @@ const Section1 = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1 }}
           >
-            <motion.div whileHover={{ scale: 1.1 }}>
+            <motion.div whileHover={{ scale: 1.0 }}>
               <ApplyButton />
             </motion.div>
             <motion.div whileHover={{ scale: 1.1 }}>

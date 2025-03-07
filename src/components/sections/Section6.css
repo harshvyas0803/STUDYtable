@@ -1,26 +1,76 @@
-
-
-/* New styles for section6 */
+/* Section6 Styles */
 .section6 {
-    text-align: center;
-    margin-top: 2rem;
-    padding: 1rem;
-    margin-top: 10rem;
-    margin-bottom: 12rem;
+  text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 12rem;
+  padding: 1rem;
+}
+
+/* Typing Effect */
+.section6 h4 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Cursor */
+.cursor {
+  font-weight: bold;
+}
+
+/* Button Styling */
+.apply-button {
+  padding: 12px 24px;
+  font-size: 1.8rem;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #000;
+  transition: all 0.3s ease-in-out;
+}
+
+.apply-button:hover {
+  background: #333;
+}
+
+/* Responsive Design */
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .section6 {
+      margin-top: 6rem;
+      margin-bottom: 8rem;
+      padding: 0.5rem;
   }
-  
+
   .section6 h4 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+      font-size: 2.5rem;
+      white-space: normal; /* Allows text wrapping */
   }
-  
+
   .apply-button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background: #000;
+      font-size: 1.5rem;
+      padding: 10px 20px;
   }
-  
+}
+
+/* Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .section6 {
+      margin-top: 4rem;
+      margin-bottom: 6rem;
+      padding: 0.5rem;
+  }
+
+  .section6 h4 {
+      font-size: 2rem;
+  }
+
+  .apply-button {
+      font-size: 1.3rem;
+      padding: 8px 16px;
+  }
+}

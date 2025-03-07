@@ -1,78 +1,92 @@
+/* Section5 - Bigger & More Responsive */
 .section5 {
   background: rgb(45, 44, 44);
   color: #ffffff;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 90%;
-  max-width: 800px;
-  min-height: auto;
-  margin: 6rem auto 2rem;
+  padding: 4rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 1400px;
+  min-height: 60vh;
+  margin: 8rem auto 4rem;
   text-align: left;
 }
 
+/* Heading */
 .section5-heading {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.section5-description {
-  font-size: 1rem;
-  line-height: 1.6;
   margin-bottom: 1.5rem;
-  width: 100%;
 }
 
+/* Description */
+.section5-description {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Link */
 .section5-link {
   color: #ffffff;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
   display: inline-block;
-  padding: 0.5rem 0;
+  padding: 0.75rem 0;
+  transition: all 0.3s ease;
 }
 
 .section5-link:hover {
   text-decoration: underline;
+  color: #ccc;
 }
 
-/* Medium devices (tablets, 768px and down) */
-@media (max-width: 768px) {
+/* Medium devices (Tablets, 768px and down) */
+@media (max-width: 1024px) {
+  .section5 {
+      width: 90%;
+      margin-top: 6rem;
+      padding: 3rem;
+  }
+  
+  .section5-heading {
+      font-size: 2.5rem;
+  }
+  
+  .section5-description {
+      font-size: 1.1rem;
+      line-height: 1.7;
+  }
+
+  .section5-link {
+      font-size: 1.1rem;
+  }
+}
+
+/* Small devices (Phones, 480px and down) */
+@media (max-width: 600px) {
   .section5 {
       width: 95%;
       margin-top: 4rem;
-      padding: 1.5rem;
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
   }
-  
-  .section5-heading {
-      font-size: 1.75rem;
-  }
-  
-  .section5-description {
-      font-size: 0.95rem;
-      line-height: 1.5;
-  }
-}
 
-/* Small devices (phones, 480px and down) */
-@media (max-width: 480px) {
-  .section5 {
-      margin-top: 3rem;
-      padding: 1rem;
-      border-radius: 8px;
-  }
-  
   .section5-heading {
-      font-size: 1.5rem;
-      margin-bottom: 0.75rem;
+      font-size: 2rem;
+      margin-bottom: 1rem;
   }
-  
+
   .section5-description {
-      font-size: 0.9rem;
-      line-height: 1.4;
+      font-size: 1rem;
+      line-height: 1.6;
   }
-  
+
   .section5-link {
-      font-size: 0.9rem;
+      font-size: 1rem;
   }
 }
