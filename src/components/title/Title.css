@@ -3,20 +3,23 @@
   text-align: center;
   font-size: 2.2rem;
   margin-top: 2rem;
-  overflow-y: hidden;
+  overflow: hidden; /* Fixed 'overflow-y' to 'overflow' */
+  display: flex; /* Ensures 'study' and 'table' stay inline */
+  justify-content: center;
+  gap: 0rem;
 }
 
 /* Media Query for 900px */
 @media (max-width: 900px) {
   .title {
-    margin-bottom: 5rem;  
-    margin-top: -4  rem; /* Adjust this value as needed */
-    
+    margin-bottom: 5rem;
+    margin-top: -4rem; /* Removed extra space in "-4  rem" */
   }
 }
 
+/* Removed duplicate '.study' and '.table' definitions */
 .study {
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .table {

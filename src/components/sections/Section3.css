@@ -1,6 +1,7 @@
 .section3 {
   display: flex;
   margin-top: 15rem;
+  overflow-y: hidden;
 }
 
 .left-of-section3 {

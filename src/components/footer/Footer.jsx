@@ -1,38 +1,66 @@
-import React from 'react'
-import "./Footer.css"
-
-const Footer = () => {
-  return (
-    <footer className="footer">
-      <div className="footer-container">
-        <div className="footer-left">
-          <h3>Studytable</h3>
-          <p className="copyright">© Copyright 2025 Studytable</p>
-        </div>
-        <div className="footer-center">
-          <a href="#">NOTICE BOARD</a>
-        </div>
-        <div className="footer-right">
-          <div className="socials">
-            <h4>SOCIALS</h4>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-instagram"></i> Instagram
-            </a>
-            <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-whatsapp"></i> What's App
-            </a>
-          </div>
-          <div className="blogs">
-            <h4>BLOGS</h4>
-            <a href="/how-we-plan-learning-session">How we plan learning session?</a>
-            <a href="/how-we-plan-assessment-session">How we plan assessment session?</a>
-            <a href="/how-we-manage-student-life">How we manage student life?</a>
-            <a href="/the-effective-student">The effective student</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-  )
-}
-
-export default Footer
+ 
+ import React from "react";
+ import { motion } from "framer-motion";
+ import "./Footer.css";
+ 
+ const Footer = () => {
+   return (
+     <motion.footer
+       className="footer"
+       initial={{ opacity: 0, y: 50 }}
+       animate={{ opacity: 1, y: 0 }}
+       transition={{ duration: 1 }}
+     >
+       <div className="footer-container">
+         {/* Left Section */}
+         <motion.div
+           className="footer-left"
+           initial={{ opacity: 0, x: -50 }}
+           animate={{ opacity: 1, x: 0 }}
+           transition={{ delay: 0.2 }}
+         >
+           <h3>Studytable</h3>
+           <p className="copyright">© Copyright 2025 Studytable</p>
+         </motion.div>
+ 
+         {/* Center Section */}
+         <motion.div
+           className="footer-center"
+           initial={{ opacity: 0, scale: 0.8 }}
+           animate={{ opacity: 1, scale: 1 }}
+           transition={{ delay: 0.4 }}
+         >
+           <a href="#">NOTICE BOARD</a>
+         </motion.div>
+ 
+         {/* Right Section */}
+         <motion.div
+           className="footer-right"
+           initial={{ opacity: 0, x: 50 }}
+           animate={{ opacity: 1, x: 0 }}
+           transition={{ delay: 0.6 }}
+         >
+           <div className="socials">
+             <h4>SOCIALS</h4>
+             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+               <i className="fab fa-instagram"></i> Instagram
+             </a>
+             <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
+               <i className="fab fa-whatsapp"></i> WhatsApp
+             </a>
+           </div>
+           <div className="blogs">
+             <h4>BLOGS</h4>
+             <a href="/how-we-plan-learning-session">How we plan learning session?</a>
+             <a href="/how-we-plan-assessment-session">How we plan assessment session?</a>
+             <a href="/how-we-manage-student-life">How we manage student life?</a>
+             <a href="/the-effective-student">The effective student</a>
+           </div>
+         </motion.div>
+       </div>
+     </motion.footer>
+   );
+ };
+ 
+ export default Footer;
+ 

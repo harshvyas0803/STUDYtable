@@ -5,6 +5,7 @@
   text-align: center;
   margin-top: auto;
   width: 100%;
+  overflow-y:hidden;
 }
 
 .footer-container {
@@ -160,3 +161,5 @@
       font-size: 0.8rem;
   }
 }
+
+

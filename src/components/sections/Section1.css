@@ -1,6 +1,6 @@
 .hero-container {
   display: flex;
-  margin-top: 9rem;
+  margin-top: 9rem;  overflow-y:hidden;
 }
 
 .left-of-hero {
