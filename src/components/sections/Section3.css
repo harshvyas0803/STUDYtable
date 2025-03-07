@@ -1,0 +1,34 @@
+
+.section3 {
+    display: flex;
+    margin-top: 15rem;
+  }
+  
+  .left-of-section3 {
+    flex: 1;
+  }
+  
+  .right-of-section3 {
+    flex: 1;
+  }
+  
+  .section3-img {
+    width: 90%;
+    height: auto;
+    margin-top: -5rem;
+  }
+  
+  .section3-title {
+    font-size: 2.125rem;
+    letter-spacing: 1px;
+  }
+  
+  .section3-description {
+    margin-top: 1rem;
+    color: gray;
+    line-height: 1.875rem;
+    width: 29rem;
+    font-weight: 400;
+    font-size: 1.375rem;
+  }
+  

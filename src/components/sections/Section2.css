@@ -1,0 +1,33 @@
+
+.practice-section {
+    display: flex;
+    margin-top: 15rem;
+  }
+  
+  .left-of-section {
+    flex: 1;
+  }
+  
+  .section-title {
+    font-size: 2.563rem;
+    letter-spacing: 1px;
+  }
+  
+  .section-description {
+    color: gray;
+    width: 29vw;
+    margin-top: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 1.3rem;
+  }
+  
+  .right-of-section {
+    flex: 1;
+  }
+  
+  .section-img {
+    width: 100%;
+    height: auto;
+  }
+  

@@ -1,0 +1,46 @@
+.hero-container {
+    display: flex;
+    margin-top: 9rem;
+  }
+  
+  .left-of-hero {
+    flex: 1;
+  }
+  
+  .right-of-hero {
+    flex: 1;
+  }
+  
+  .hero-title {
+    color: gray;
+    font-size: 3rem;
+    letter-spacing: 1px;
+  }
+  
+  .hero-title .optimize,
+  .hero-title .jee,
+  .hero-title .neet,
+  .hero-title .boards {
+    color: black;
+    letter-spacing: 1px;
+  }
+  
+  .hero-buttons {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+   
+  }
+  
+  .hero-description {
+    margin-top: 1rem;
+    color: gray;
+    font-size: 1.2rem;
+  }
+  
+  .hero-img {
+    width: 100%;
+    height: auto;
+    margin-top: -80px;
+  }
+  

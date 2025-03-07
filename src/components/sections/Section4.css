@@ -1,0 +1,27 @@
+
+  .section4 {
+    display: flex;
+    margin-top: 15rem;
+  }
+  
+  .left-of-section4 {
+    flex: 1;
+  }
+  
+  .section4-title {
+    font-size: 2.125rem;
+    letter-spacing: 1px;
+  }
+  
+  .section4-description {
+    width: 32rem;
+    margin-top: 1rem;
+    color: gray;
+    font-size: 1.375rem;
+    line-height: 2rem;
+  }
+  
+  .right-of-section4 {
+    flex: 1;
+  }
+  

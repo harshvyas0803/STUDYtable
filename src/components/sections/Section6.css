@@ -1,0 +1,26 @@
+
+
+/* New styles for section6 */
+.section6 {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    margin-top: 10rem;
+    margin-bottom: 12rem;
+  }
+  
+  .section6 h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .apply-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

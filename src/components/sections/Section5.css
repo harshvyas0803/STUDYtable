@@ -1,0 +1,39 @@
+
+
+
+.section5 {
+    background: rgb(45, 44, 44);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 60vw;
+    min-height: 40vh; /* Changed to min-height for flexibility */
+    margin: 20px auto;
+    text-align: left;
+    margin-top: 12rem;
+  }
+  
+  .section5-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .section5-description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    width: 70%;
+    line-height: 34px;
+  }
+  
+  .section5-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .section5-link:hover {
+    text-decoration: underline;
+  }
