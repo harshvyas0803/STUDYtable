@@ -1,46 +1,84 @@
 .hero-container {
-    display: flex;
-    margin-top: 9rem;
+  display: flex;
+  margin-top: 9rem;
+}
+
+.left-of-hero {
+  flex: 1;
+}
+
+.right-of-hero {
+  flex: 1;
+}
+
+.hero-title {
+  color: gray;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+.hero-title .optimize,
+.hero-title .jee,
+.hero-title .neet,
+.hero-title .boards {
+  color: black;
+  letter-spacing: 1px;
+}
+
+.hero-buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap; /* Allows buttons to wrap on narrow screens */
+}
+
+.hero-description {
+  margin-top: 1rem;
+  color: gray;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  margin-top: -80px;
+}
+
+/* Media query for screens 768px and below */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column; /* Stack content vertically */
+    margin-top: 2rem;      /* Reduce top margin */
   }
-  
-  .left-of-hero {
-    flex: 1;
-  }
-  
-  .right-of-hero {
-    flex: 1;
-  }
-  
+
   .hero-title {
-    color: gray;
-    font-size: 3rem;
-    letter-spacing: 1px;
+    font-size: 2rem;       /* Smaller title */
   }
-  
-  .hero-title .optimize,
-  .hero-title .jee,
-  .hero-title .neet,
-  .hero-title .boards {
-    color: black;
-    letter-spacing: 1px;
-  }
-  
-  .hero-buttons {
-    margin-top: 2rem;
-    display: flex;
-    gap: 1rem;
-   
-  }
-  
+
   .hero-description {
-    margin-top: 1rem;
-    color: gray;
-    font-size: 1.2rem;
+    font-size: 1rem;       /* Smaller description */
   }
-  
+
+  .hero-title br,
+  .hero-description br {
+    display: none;         /* Remove forced line breaks */
+  }
+
   .hero-img {
-    width: 100%;
-    height: auto;
-    margin-top: -80px;
+    margin-top: 0;         /* Reset negative margin */
   }
-  
+
+  .hero-content {
+    padding: 0 1rem;       /* Add horizontal padding */
+  }
+
+  .hero-buttons {
+    justify-content: center; /* Center buttons */
+  }
+
+  .hero-image {
+    margin-top: 2rem;      /* Space between text and image */
+  }
+}

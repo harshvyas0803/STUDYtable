@@ -1,33 +1,55 @@
-
 .practice-section {
-    display: flex;
-    margin-top: 15rem;
+  display: flex;
+  margin-top: 15rem;
+}
+
+.left-of-section {
+  flex: 1;
+}
+
+.section-title {
+  font-size: 2.563rem;
+  letter-spacing: 1px;
+}
+
+.section-description {
+  color: gray;
+  width: 29vw;
+  margin-top: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.right-of-section {
+  flex: 1;
+}
+
+.section-img {
+  width: 100%;
+  height: auto;
+}
+
+/* Media query for screens up to 768px (e.g., tablets and mobile) */
+@media (max-width: 768px) {
+  .practice-section {
+    flex-direction: column; /* Stack text and image vertically */
+    margin-top: 5rem;      /* Reduce top margin */
+    padding: 0 1rem;       /* Add horizontal padding */
+    gap: 2rem;             /* Space between text and image */
   }
-  
-  .left-of-section {
-    flex: 1;
-  }
-  
-  .section-title {
-    font-size: 2.563rem;
-    letter-spacing: 1px;
-  }
-  
-  .section-description {
-    color: gray;
-    width: 29vw;
-    margin-top: 1rem;
-    line-height: 1.5;
-    font-weight: 400;
-    font-size: 1.3rem;
-  }
-  
+
+  .left-of-section,
   .right-of-section {
-    flex: 1;
+    flex: 0 0 auto;        /* Take natural content height, not stretched */
   }
-  
-  .section-img {
-    width: 100%;
-    height: auto;
+
+  .section-title {
+    font-size: 2rem;       /* Smaller title on mobile */
   }
-  
+
+  .section-description {
+    width: 100%;           /* Full width on mobile */
+    font-size: 1rem;       /* Smaller text on mobile */
+  }
+}

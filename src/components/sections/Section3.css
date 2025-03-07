@@ -1,34 +1,55 @@
-
 .section3 {
-    display: flex;
-    margin-top: 15rem;
+  display: flex;
+  margin-top: 15rem;
+}
+
+.left-of-section3 {
+  flex: 1;
+}
+
+.right-of-section3 {
+  flex: 1;
+}
+
+.section3-img {
+  width: 90%;
+  height: auto;
+  margin-top: -5rem;
+}
+
+.section3-title {
+  font-size: 2.125rem;
+  letter-spacing: 1px;
+  line-height: 1.2; /* Added for better title spacing */
+}
+
+.section3-description {
+  margin-top: 1rem;
+  color: gray;
+  line-height: 1.5; /* Unitless for proportional scaling */
+  width: 29rem;
+  max-width: 100%; /* Prevents overflow on small screens */
+  font-weight: 400;
+  font-size: 1.375rem;
+}
+
+@media (max-width: 768px) {
+  .section3 {
+    flex-direction: column-reverse; /* Text first, image below */
+    margin-top: 5rem; /* Reduced for mobile */
+    gap: 2rem; /* Space between text and image */
+    padding: 0 1rem; /* Side padding for mobile */
   }
-  
-  .left-of-section3 {
-    flex: 1;
-  }
-  
-  .right-of-section3 {
-    flex: 1;
-  }
-  
+
   .section3-img {
-    width: 90%;
-    height: auto;
-    margin-top: -5rem;
+    margin-top: 0; /* Reset negative margin */
   }
-  
+
   .section3-title {
-    font-size: 2.125rem;
-    letter-spacing: 1px;
+    font-size: 1.5rem; /* Smaller title on mobile */
   }
-  
+
   .section3-description {
-    margin-top: 1rem;
-    color: gray;
-    line-height: 1.875rem;
-    width: 29rem;
-    font-weight: 400;
-    font-size: 1.375rem;
+    font-size: 1rem; /* Smaller text on mobile */
   }
-  
+}
