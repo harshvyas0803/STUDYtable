@@ -207,6 +207,8 @@
   text-align: center;
   margin-top: 2rem;
   padding: 1rem;
+  margin-top: 10rem;
+  margin-bottom: 12rem;
 }
 
 .section6 h4 {
@@ -226,10 +228,11 @@
 
 /* Footer Styles */
 .footer {
-  background-color: #2D2C2C;
+  background-color: #1f1e1e;
   padding: 20px;
   text-align: center;
   margin-top: auto;
+  width: 100
 }
 
 .footer-container {

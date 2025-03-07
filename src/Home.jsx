@@ -128,6 +128,8 @@ const Home = () => {
           <button className="apply-button">Get Your Entry</button>
         </div>
 
+      
+      </div>
         {/* FOOTER */}
         <footer className="footer">
           <div className="footer-container">
@@ -158,7 +160,6 @@ const Home = () => {
             </div>
           </div>
         </footer>
-      </div>
     </>
   );
 };
