@@ -5,10 +5,12 @@
 
 .left-of-hero {
   flex: 1;
+  overflow-y:hidden;
 }
 
 .right-of-hero {
   flex: 1;
+  overflow-y:hidden;
 }
 
 .hero-title {
@@ -16,6 +18,7 @@
   font-size: 3rem;
   letter-spacing: 1px;
   line-height: 1.2;
+  overflow-y:hidden;
 }
 
 .hero-title .optimize,
@@ -24,26 +27,27 @@
 .hero-title .boards {
   color: black;
   letter-spacing: 1px;
+  overflow-y:hidden;
 }
 
 .hero-buttons {
   margin-top: 2rem;
   display: flex;
   gap: 1rem;
-  flex-wrap: wrap; /* Allows buttons to wrap on narrow screens */
+  flex-wrap: wrap; /* Allows buttons to wrap on narrow screens */ overflow-y:hidden;
 }
 
 .hero-description {
   margin-top: 1rem;
   color: gray;
   font-size: 1.2rem;
-  line-height: 1.5;
+  line-height: 1.5; overflow-y:hidden;
 }
 
 .hero-img {
   width: 100%;
   height: auto;
-  margin-top: -80px;
+  margin-top: -80px; overflow-y:hidden;
 }
 
 /* Media query for screens 768px and below */
